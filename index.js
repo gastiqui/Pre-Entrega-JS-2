@@ -210,3 +210,34 @@ const buscado = productos.filter (elemento => {
 })
 
 console.table (buscado)
+
+
+
+// Buscar producto con Find
+
+
+const resultado = productos.find(({ producto }) => producto === "Coca-Cola");
+
+console.log(resultado);
+
+
+// Nuevos objetos con class constructor de ejemplo
+
+
+class Auto {
+    constructor (marca, color, potencia, combustible){
+        this.marca = marca;
+        this.color = color;
+        this.potencia = potencia;
+        this.combustible = combustible;
+    }
+    velocidadMaxima() {
+        return 300
+    }   
+}
+
+const formulaUnoFerrari = new Auto( "Ferrari", "Rojo", 600, "Nafta" )
+
+const formulaUnoMercedes = new Auto ("Mercedes", "Silver", 650, "Nafta")
+
+const formulaUnoRedBull = new auto ("Red Bull", "Azul", 650, "Nafta")
